@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.erze.yqj.moudle.user.SelectBgPhotoActivity">
+    <include layout="@layout/common_title"/>
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_marginTop="60px"
+        android:layout_width="match_parent"
+        android:layout_height="240px">
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:background="@drawable/bg"
+            android:layout_width="match_parent"
+            android:layout_height="120px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="从手机相册选取"
+                android:textSize="42px"
+                android:textColor="#000"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                />
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40px"
+                android:background="#eef2ee"
+                android:layout_height="1px" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:background="@drawable/bg"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="120px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拍一张"
+                android:textColor="#000"
+                android:layout_marginLeft="40px"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

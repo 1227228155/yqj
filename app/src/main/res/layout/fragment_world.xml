@@ -1,0 +1,38 @@
+<com.weavey.loading.lib.LoadingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layout_marginTop="20dp"
+    app:isFirstVisible="true"
+    android:id="@+id/loading_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.erze.yqj.moudle.world.WorldFragment">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/world_tab"
+        app:tabIndicatorHeight="0dp"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+        app:tabTextColor="#acb1ac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/world_tab_tv"
+        android:layout_below="@+id/world_tab"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d8dad8"
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/world_viewPager"
+        android:layout_below="@+id/world_tab_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+  </RelativeLayout>
+
+
+
+</com.weavey.loading.lib.LoadingLayout>

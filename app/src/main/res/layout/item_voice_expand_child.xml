@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="187px">
+    <TextView
+        android:id="@+id/expandListView_child_musicName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="这是一个歌名"
+        android:textSize="54px"
+        android:layout_marginLeft="70px"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:id="@+id/expandListView_child_musicAuthor"
+        android:layout_below="@+id/expandListView_child_musicName"
+        android:layout_marginLeft="70px"
+        android:textSize="34px"
+        android:layout_marginTop="34px"
+        android:text="啊哈哈哈"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>

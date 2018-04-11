@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="443px"
+        android:layout_marginLeft="193px"
+        android:text="请输入验证码"
+        android:textColor="#000"
+        android:textSize="120px"
+        />
+
+    <RelativeLayout
+        android:id="@+id/login_rl"
+        android:layout_width="950px"
+        android:layout_height="141px"
+        android:layout_below="@+id/login_text"
+        android:layout_marginTop="155px"
+        android:layout_marginLeft="65px"
+        android:background="@drawable/login_et_bg"
+        >
+
+        <EditText
+            android:id="@+id/login_et"
+            android:layout_width="460px"
+            android:layout_height="86px"
+            android:layout_marginLeft="192px"
+            android:digits="1234567890"
+            android:textSize="80px"
+            android:maxLength="6"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@drawable/login_et_cursor_color"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/login_goto_main"
+        android:layout_below="@+id/login_rl"
+        android:layout_marginTop="74px"
+        android:layout_marginLeft="449px"
+        android:layout_width="220px"
+        android:layout_height="220px"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_go"
+        />
+
+
+
+</RelativeLayout>

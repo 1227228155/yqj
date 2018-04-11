@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.erze.yqj.moudle.report.ReportActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/common_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/common_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="投诉举报"
+            android:textColor="#000"
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg"
+            android:paddingTop="5dp"
+            android:text="提交"
+            android:textSize="50px"
+            android:textColor="#000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/report_edit"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="填写举报内容"
+            android:textSize="51px"
+            android:background="@null"
+            android:maxLength="100"
+            android:textColorHint="#afafaf"
+            />
+        <ImageView
+            android:id="@+id/report_add_pic"
+            android:layout_below="@+id/report_edit"
+            android:layout_marginTop="73px"
+            android:layout_width="265px"
+            android:layout_height="265px"
+            android:src="@mipmap/add_pic"
+            android:background="@drawable/bg"
+            />
+    </RelativeLayout>
+</LinearLayout>

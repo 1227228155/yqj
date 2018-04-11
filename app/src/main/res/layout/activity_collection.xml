@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.erze.yqj.moudle.user.collection.CollectionActivity">
+    <include layout="@layout/common_title"/>
+    <com.weavey.loading.lib.LoadingLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:isFirstVisible="true"
+        android:id="@+id/loading_layout">
+        <com.erze.yqj.moudle.comment.listview.PullUpLoadMoreListView
+            android:id="@+id/collection_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.weavey.loading.lib.LoadingLayout>
+
+</LinearLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+    <ImageView
+        android:id="@+id/other_see_image"
+        android:layout_width="match_parent"
+        android:layout_height="756px"
+        android:src="@drawable/null_avatar"
+        android:scaleType="fitXY"
+        />
+    <ImageView
+        android:id="@+id/other_see_back"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:src="@drawable/left_arrow"
+        android:padding="10px"
+        android:layout_marginTop="35px"
+        android:layout_marginLeft="25px"
+        />
+    <LinearLayout
+        android:id="@+id/other_see_ll"
+        android:layout_below="@+id/other_see_image"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_height="243px">
+
+        <RelativeLayout
+            android:id="@+id/rl_follow"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/other_see_follow"
+                android:layout_width="59px"
+                android:layout_height="67px"
+                android:layout_marginTop="83px"
+                android:layout_marginLeft="98px"
+                android:src="@drawable/other_see_follow"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/other_see_follow_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/other_see_follow"
+                android:layout_marginLeft="34px"
+                android:textSize="40px"
+                android:layout_marginTop="180px"
+                android:text="关注"
+                android:layout_centerVertical="true"
+                android:textColor="#1c1c1c"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_add_friend"
+            android:background="@drawable/bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/other_see_add_friend"
+                android:layout_width="59px"
+                android:layout_height="67px"
+                android:layout_marginTop="83px"
+                android:layout_marginLeft="98px"
+                android:src="@drawable/other_see_add_friend"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/other_see_add_friend"
+                android:layout_marginLeft="34px"
+                android:textSize="40px"
+                android:text="加好友"
+                android:layout_marginTop="180px"
+                android:layout_centerVertical="true"
+                android:textColor="#1c1c1c"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_send_msg"
+            android:background="@drawable/bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/other_see_send_msg"
+                android:layout_width="70px"
+                android:layout_height="80px"
+                android:src="@drawable/other_see_send_msg"
+                android:layout_marginTop="83px"
+                android:layout_marginLeft="98px"
+                android:padding="10px"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/other_see_send_msg"
+                android:layout_marginLeft="34px"
+                android:textSize="40px"
+                android:text="聊聊"
+                android:layout_marginTop="200px"
+                android:layout_centerVertical="true"
+                android:textColor="#1c1c1c"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_below="@+id/other_see_ll"
+        android:layout_width="match_parent"
+        android:layout_height="230px">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/user_avatar"
+            android:layout_marginLeft="60px"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:src="@drawable/null_avatar"
+            android:layout_centerVertical="true"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#FF000000"/>
+
+
+        <TextView
+            android:id="@+id/user_username"
+            android:layout_width="250px"
+            android:layout_height="60px"
+            android:layout_marginLeft="69px"
+            android:layout_marginTop="50px"
+            android:layout_toRightOf="@+id/user_avatar"
+            android:text="你的啊啊"
+            android:textColor="#1c1c1c"
+            android:textSize="54px" />
+
+        <TextView
+            android:id="@+id/user_id_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_username"
+            android:layout_marginLeft="69px"
+            android:layout_marginTop="51px"
+            android:layout_toRightOf="@+id/user_avatar"
+            android:text="ID :"
+            android:textColor="#bdbdbd"
+            android:textSize="37px" />
+
+        <TextView
+            android:id="@+id/user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_username"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="51px"
+            android:layout_toRightOf="@+id/user_id_text"
+            android:textColor="#bdbdbd"
+            android:textSize="37px" />
+
+        <ImageView
+            android:id="@+id/user_vip"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_marginLeft="34px"
+            android:layout_marginTop="50px"
+            android:layout_toRightOf="@+id/user_username"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_vip" />
+
+        <ImageView
+            android:id="@+id/user_sex_img"
+            android:layout_width="40px"
+            android:layout_height="50px"
+            android:layout_marginLeft="230px"
+            android:layout_marginTop="160px"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_sex" />
+
+        <TextView
+            android:id="@+id/user_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="50px"
+            android:layout_toRightOf="@+id/user_vip"
+            android:text="18岁"
+            android:textColor="#bdbdbd"
+            android:textSize="46px" />
+
+        <TextView
+            android:id="@+id/user_fans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="320px"
+            android:textColor="#bdbdbd"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/user_fans_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160px"
+            android:layout_toLeftOf="@+id/user_fans"
+            android:text="粉丝："
+            android:textColor="#bdbdbd"
+            android:textSize="40px" />
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/label"
+        android:layout_below="@+id/rl"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/label"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="100px"
+        />
+<LinearLayout
+    android:id="@+id/label_ll"
+    android:layout_below="@+id/rl"
+    android:layout_toRightOf="@+id/label"
+    android:layout_width="200dp"
+    android:layout_marginTop="16dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+</LinearLayout>
+    <TextView
+        android:id="@+id/qm"
+        android:layout_below="@+id/label"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:text ="
+        这是个性签名哈哈哈哈哈  啊哈哈啊哈哈哈啊哈哈哈啊哈哈哈哈哈哈啊哈哈哈哈哈哈"
+        android:textColor="#bdbdbd"
+        android:layout_marginLeft="72px"
+        android:layout_marginRight="72px"
+        android:layout_height="288px" />
+    <com.erze.yqj.moudle.comment.listview.PullUpLoadMoreListView
+        android:id="@+id/listView"
+        android:background="#eef2ee"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="26px"
+        android:layout_marginTop="40px"
+        android:layout_below="@+id/qm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+</ScrollView>

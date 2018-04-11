@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200px"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/world_tv1"
+        android:layout_marginTop="46px"
+        android:layout_width="11px"
+        android:layout_height="126px"
+        android:background="#272727"
+        />
+    <TextView
+        android:id="@+id/world_new_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="资讯"
+        android:textSize="80px"
+        android:textColor="#010101"
+        android:layout_toRightOf="@+id/world_tv1"
+        android:layout_marginLeft="36px"
+        android:layout_centerVertical="true"
+        />
+
+    <com.sunfusheng.marqueeview.MarqueeView
+        android:id="@+id/marqueeView"
+        app:mvAnimDuration="1000"
+        app:mvInterval="5000"
+        app:mvTextColor="@color/black"
+        app:mvTextSize="14sp"
+        app:mvSingleLine="true"
+        android:layout_toRightOf="@+id/world_new_text"
+        android:layout_marginLeft="60px"
+      android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+    <TextView
+        android:id="@+id/world_tab_tv2"
+        android:layout_below="@+id/marqueeView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="60px"
+        android:layout_height="0.5dp"
+        android:background="#d8dad8"
+        />
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.erze.yqj.moudle.voice.bgm.SelectorBgmActivity">
+    <EditText
+        android:id="@+id/find_music_et"
+        android:layout_toLeftOf="@+id/find_music_iv"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="搜索网络歌曲"
+        android:paddingTop="10dp"
+        android:background="@null"
+        android:gravity="center_horizontal"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_below="@+id/find_music_et"
+        android:layout_toLeftOf="@+id/find_music_iv"
+        />
+    <ImageView
+        android:id="@+id/find_music_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@mipmap/find_music_iv"
+        android:padding="5dp"
+        android:layout_alignParentRight="true"
+        android:onClick="findBgm"
+        />
+    <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+        android:id="@+id/bgmListView"
+        android:layout_below="@+id/bgm_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/bgm_tab"
+        android:layout_below="@+id/find_music_et"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+        app:tabTextColor="#acb1ac"
+        app:tabIndicatorColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

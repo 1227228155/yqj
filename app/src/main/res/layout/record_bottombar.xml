@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+              >
+
+    <RelativeLayout
+        android:id="@+id/default_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:background="#00000000"
+        android:layout_alignParentBottom="true"
+      >
+
+            <ImageView
+                android:id="@+id/record_beauty"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="60dp"
+                android:src="@drawable/beauty_2"/>
+            <ImageView
+                android:id="@+id/record_bgm"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+               android:layout_alignParentRight="true"
+                android:layout_marginTop="150dp"
+                android:layout_marginRight="60dp"
+                android:src="@drawable/music_2"/>
+            <CheckBox
+                android:id="@+id/record_front_mirror"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="镜像"
+                android:visibility="gone"
+                android:checked="true"/>
+            <CheckBox
+                android:id="@+id/record_watermark"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="水印"
+                android:checked="false"/>
+
+        <FrameLayout
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110px"
+            android:background="@color/record_progress_pause">
+
+            <com.erze.yqj.moudle.shortvideo.recordclip.RecordProgressView
+                android:id="@+id/record_progress"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"/>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+           >
+
+            <ImageView
+                android:id="@+id/click_to_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/record_state">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/click_to_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/click_to_record"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/record_back_state"/>
+
+            <ImageView
+                android:id="@+id/click_to_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@id/click_to_record"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/next"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/item_beauty_select"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/stub_item_beauty"
+        android:visibility="gone"/>
+    <include
+        android:id="@+id/item_bgm_select"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/stub_item_bgm"
+        android:visibility="gone"/>
+
+</RelativeLayout>

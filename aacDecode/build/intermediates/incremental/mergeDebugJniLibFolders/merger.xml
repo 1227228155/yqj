@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\yqj\aacDecode\src\main\jniLibs"><file name="armeabi/libAacEncoder.so" path="D:\yqj\aacDecode\src\main\jniLibs\armeabi\libAacEncoder.so"/><file name="armeabi/libVoAACEncoder.so" path="D:\yqj\aacDecode\src\main\jniLibs\armeabi\libVoAACEncoder.so"/></source></dataSet><dataSet config="debug"><source path="D:\yqj\aacDecode\src\debug\jniLibs"/></dataSet></merger>

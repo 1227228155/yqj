@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <TextView
+        android:id="@+id/tv"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/label_selector_bg"
+         android:textColor="@drawable/label_tv_color"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />

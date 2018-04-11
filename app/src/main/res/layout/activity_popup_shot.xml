@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8000"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:onClick="record"
+        android:text="录制视频"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:onClick="intoVideo"
+        android:text="导入视频"/>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/pp_btn1"
+        android:layout_above="@+id/pp_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消关注"
+        android:textColor="#006cff"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/label_bg"
+        />
+    <Button
+        android:id="@+id/pp_btn2"
+        android:layout_above="@+id/pp_btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="举报"
+        android:textColor="#006cff"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/label_bg"
+        />
+    <Button
+        android:id="@+id/pp_btn3"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:textColor="#006cff"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/label_bg"
+        />
+
+</RelativeLayout>

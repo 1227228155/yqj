@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eef2ee"
+    android:orientation="vertical"
+    tools:context="com.erze.yqj.moudle.user.setting.FeedBackActivity">
+    <include layout="@layout/common_title"/>
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="600px">
+        <EditText
+            android:layout_below="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="感谢您使用艺气君APP，使用过程中有任何意见或建议请反馈给我们"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColorHint="#afafaf"
+            android:textSize="50px"
+            android:background="@null"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:text="提交"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/label_bg"
+        />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/login_et_cursor_color"
+        android:state_checked="true"
+        >
+
+    </item>
+    <item
+        android:drawable="@drawable/label_shape1"></item>
+</selector>

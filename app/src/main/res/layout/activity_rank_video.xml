@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.erze.yqj.moudle.user.rank.RankVideoActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="165px"
+        android:background="#0d84f5"
+        >
+        <ImageView
+            android:id="@+id/rank_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back_write"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80px"
+            />
+        <ImageView
+            android:layout_width="280px"
+            android:layout_height="80px"
+            android:src="@mipmap/rank_video"
+            android:layout_marginTop="70px"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:background="#eef2ee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

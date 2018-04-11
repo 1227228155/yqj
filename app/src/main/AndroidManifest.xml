@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.erze.yqj">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_SINTERNETWIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 打开Camera的权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.autofocus" />
+
+    <!-- 开启闪光灯权限 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 友盟分享权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 环信权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <provider
+        android:name="android.support.v4.content.FileProvider"
+        android:authorities="com.erze.yqj.fileprovider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_paths" />
+    </provider>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".QuickStartActivity"
+            android:theme="@style/QuickTheme"
+         >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity android:name=".moudle.main.MainActivity"
+             android:configChanges="orientation|screenSize|keyboardHidden"
+             android:launchMode="singleTask"
+             android:theme="@style/AppTheme"
+             />
+        <activity android:name=".moudle.Login.LoginActivity" />
+        <activity android:name=".moudle.Login.yzm.YzmActivity" />
+        <activity android:name=".moudle.Login.personal.RegisterPersonalDataActivity" />
+        <activity android:name=".moudle.shortvideo.RecordActivity" />
+        <activity android:name=".moudle.shortvideo.EditActivity" />
+        <activity android:name=".moudle.shortvideo.FileImportActivity" />
+        <activity android:name=".moudle.release.ReleaseActivity" />
+        <activity android:name=".WBShareActivity" />
+        <activity android:name=".moudle.user.setting.SettingActivity" />
+        <activity android:name=".moudle.user.rank.RankActivity" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".moudle.voice.VoiceActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- Mob -->
+        <meta-data
+            android:name="Mob-AppKey"
+            android:value="1ef2349f8a75c" />
+        <meta-data
+            android:name="Mob-AppSecret"
+            android:value="a480babc247abcc80d62986ba895f42d" />
+        <!-- 友盟第三方分享KEY -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="561cae6ae0f55abd990035bf" />
+
+        <!-- 微博分享 -->
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- QQ分享 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105864751" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".moudle.voice.bgm.SelectorBgmActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" />
+        <!-- 环信相关 -->
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="1158170114178372#yiqijun" />
+        <!-- 声明sdk所需的service -->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+        <!-- 声明sdk所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 百度地图所需的service -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="cAzz6uIpWuvyqtGVHfVoENs8IyYYpxS7" />
+
+        <activity
+            android:name=".moudle.chat.ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".moudle.user.followlist.FollowListActivity" />
+        <activity android:name=".moudle.user.UpdateUserDataActivity" />
+        <activity android:name=".moudle.user.setting.AboutActivity" />
+        <activity android:name=".moudle.user.ServiceActivity" />
+        <activity android:name=".moudle.user.setting.FeedBackActivity" />
+        <activity android:name=".moudle.user.setting.UserAdminActivity" />
+        <activity
+            android:name=".moudle.follow.OtherFollowActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".moudle.user.fansList.FansListActivity" />
+        <activity android:name=".moudle.user.collection.CollectionActivity" />
+        <activity
+            android:name=".moudle.comment.CommentActivity"
+            android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name=".moudle.report.ReportActivity" />
+        <activity android:name=".moudle.comment.reply.ReplyActivity" />
+        <activity android:name=".moudle.user.setting.UpdatePhoneActivity" />
+        <activity android:name=".moudle.user.works.WorksActivity" />
+        <activity android:name=".moudle.user.rank.RankVideoActivity" />
+        <activity
+            android:name=".moudle.chat.EaseChatActivity"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:name=".moudle.follow.add.AddFriendActivity" />
+        <activity android:name=".moudle.user.SelectBgPhotoActivity" />
+        <activity android:name=".moudle.voice.Voice2Activity" />
+
+        <service
+            android:name=".moudle.voice.utils.DownloadService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".moudle.voice.utils.PlayService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".moudle.release.ReleaseVoiceActivity" />
+    </application>
+
+</manifest>

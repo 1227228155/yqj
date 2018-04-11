@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layout_marginTop="20dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="115px">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学生时代"
+            android:textSize="50px"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    <com.youth.banner.Banner
+        android:id="@+id/student_banner"
+        android:layout_width="match_parent"
+        android:layout_height="480px"/>
+    <GridView
+        android:id="@+id/student_gridView"
+        android:numColumns="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

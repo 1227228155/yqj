@@ -1,0 +1,71 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="Theme.NoTitleBar" parent="@android:style/Theme.NoTitleBar" />
+
+    <style name="QuickTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="DefaultAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+
+    <style name="RiseAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_stand</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+
+    <style name="Theme.RiseAnimation" parent="@style/AppTheme">
+        <item name="android:windowAnimationStyle">@style/RiseAnimation</item>
+    </style>
+
+    <style name="ThemeWithTitle" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/DefaultAnimation</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+    <style name="CustomDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style  name="TextViewStyle">
+        <item name="android:textColor">#777777</item>
+        <item name="android:textSize">36px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">42px</item>
+    </style>
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#bababa</item>
+        <item name="colorControlActivated">#bababa</item>
+    </style>
+    <style name="style_progressbar" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/progressbar</item>
+    </style>
+</resources>
